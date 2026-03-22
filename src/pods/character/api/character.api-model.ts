@@ -1,5 +1,5 @@
 export interface Character {
-  id: number;
+  id: string;
   name: string;
   status: string;
   species: string;
@@ -7,14 +7,14 @@ export interface Character {
   gender: string;
   origin: {
     name: string;
-    url: string;
+
   };
   location: {
     name: string;
-    url: string;
+
   };
   image: string;
-  episode: string[];
-  url: string;
-  created: string;
+  episode: { id: string }[];
+
+
 }
